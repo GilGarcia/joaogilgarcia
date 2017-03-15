@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>João Gil Garcia | joaogilgarcia.com</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    
+    <link href="http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,600,700,500" rel="stylesheet" type="text/css">
+
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col col-3 col-menu">
+        <%= image_tag("me.jpg", class:"img-fluid") %>
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a href="#profile" class="nav-link">Profile <i class="fa fa-user"></i></a>
+            </li>
+            <li class="nav-item">
+              <a href="#skills" class="nav-link">Skills <i class="fa fa-pencil"></i></a>
+            </li>
+            <li class="nav-item">
+              <a  href="#education" class="nav-link">Education <i class="fa fa-book"></i></a>
+            </li>
+            <li class="nav-item">
+              <a  href="#about" class="nav-link">About <i class="fa fa-question"></i></a>
+            </li>
+            <li class="nav-item">
+              <a  href="#contact" class="nav-link">Contact <i class="fa fa-envelope"></i></a>
+            </li>
+          </ul>  
+        </div>
+        <div class="col col-8">
+          <%= yield %>
+        </div>
+      </div> 
+    </div>
+  </body>
+</html>

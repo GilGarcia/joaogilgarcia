@@ -1,0 +1,68 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+@import "bootstrap";
+@import "font-awesome";
+
+body {
+    color: rgb(40, 40, 40);
+    font-family: "Helvetica Neue",Raleway,Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    /*background-color: #efefef;*/
+
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: 100;
+}
+
+h1 {
+  font-size: 65px;
+}
+
+h2 {
+  font-size: 55px;
+}
+
+h3 {
+  font-size: 45px;
+}
+
+.col-menu {
+  li {
+    border-bottom: 1px solid rgb(234, 234, 234);
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(234, 234, 234);
+    a {
+      font-size: 11px;
+      font-weight: 600;
+      text-align: right;
+      text-transform: uppercase;
+      color: rgb(40, 40, 40);
+      line-height: 45px;
+    }
+    a:hover i {
+      color: rgb(37, 181, 241);
+    }
+    i {
+      font-size: 13px;
+      margin-left: 20px;
+      color: rgb(213, 213, 213);
+    }
+  }
+}
